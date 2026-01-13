@@ -1,0 +1,22 @@
+name = "feedbackflow"
+main = "src/index.ts"
+compatibility_date = "2024-11-01"
+
+# D1 Database binding
+[[d1_databases]]
+binding = "DB"
+database_name = "feedbackflow-db"
+database_id = "2a77b4a9-3c47-4be4-b462-74cafac35157"
+
+# Workers AI binding
+[ai]
+binding = "AI"
+
+# Environment variables (optional)
+[vars]
+ENVIRONMENT = "development"
+
+# Production environment overrides
+[env.production]
+[env.production.vars]
+ENVIRONMENT = "production"

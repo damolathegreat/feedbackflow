@@ -1,0 +1,20 @@
+{
+  "name": "feedbackflow",
+  "version": "1.0.0",
+  "description": "Feedback management dashboard with sentiment analysis",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:create": "wrangler d1 create feedbackflow-db",
+    "db:migrate": "wrangler d1 execute feedbackflow-db --local --file=./schema.sql",
+    "db:migrate:prod": "wrangler d1 execute feedbackflow-db --remote --file=./schema.sql",
+    "db:seed": "wrangler d1 execute feedbackflow-db --local --file=./seed.sql",
+    "db:seed:prod": "wrangler d1 execute feedbackflow-db --remote --file=./seed.sql"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241127.0",
+    "typescript": "^5.3.3",
+    "wrangler": "^3.91.0"
+  }
+}
