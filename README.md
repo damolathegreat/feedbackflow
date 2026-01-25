@@ -123,16 +123,14 @@ CREATE INDEX idx_created_at ON Feedback(created_at);
 
 └── README.md
 ```
+Author
 
-## Author
-
-**Damola Agboola**
+Damola Agboola
 - GitHub: [@damolathegreat](https://github.com/damolathegreat)
 - Twitter: [@damola](https://twitter.com/0xdamola)
 - LinkedIn: [Damola Agboola](https://linkedin.com/in/damola-agboola)
 
-## Acknowledgments
-
+Acknowledgments
 - Built with [Cloudflare Workers](https://workers.cloudflare.com/)
 - Database powered by [Cloudflare D1](https://developers.cloudflare.com/d1/)
 - Charts by [Chart.js](https://www.chartjs.org/)
